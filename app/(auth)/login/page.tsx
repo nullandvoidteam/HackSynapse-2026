@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { CodeQuestLoginCard } from "@/components/auth/codequest-login-card"
 import { CodeQuestRpgScene } from "@/components/auth/codequest-rpg-scene"
+import { CodeQuestLogo } from "@/components/brand/codequest-logo"
 
 export default async function LoginPage(props: {
   searchParams: Promise<{ error?: string }>
@@ -13,22 +14,9 @@ export default async function LoginPage(props: {
       <header className="w-full max-w-7xl mx-auto flex items-center justify-between mb-6 lg:mb-8">
         <Link
           href="/"
-          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-lg p-1"
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-lg p-1"
         >
-          {/* Terminal Icon `>_` with Sparks */}
-          <div className="relative flex items-center justify-center">
-            <div className="h-9 w-9 bg-emerald-600 border-2 border-b-4 border-emerald-700 rounded-xl flex items-center justify-center text-white font-mono font-black text-sm shadow-md group-hover:scale-105 transition-transform">
-              &gt;_
-            </div>
-            {/* Ambient Sparkles */}
-            <span className="absolute -top-2 -right-2 text-amber-400 text-xs animate-twinkle select-none">
-              ✦
-            </span>
-          </div>
-
-          <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
-            CodeQuest
-          </span>
+          <CodeQuestLogo size="md" showTagline={true} />
         </Link>
       </header>
 
