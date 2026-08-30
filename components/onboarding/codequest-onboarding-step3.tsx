@@ -223,20 +223,20 @@ export function CodeQuestOnboardingStep3({
   const primaryLang = selectedLanguages[0] || "Python"
 
   return (
-    <div className="relative min-h-screen w-full bg-[#fbfbfa] text-slate-900 flex flex-col justify-between overflow-x-hidden font-sans selection:bg-emerald-500 selection:text-white">
+    <div className="relative min-h-screen w-full bg-[#f4f8f0] text-slate-900 flex flex-col justify-between overflow-x-hidden font-sans selection:bg-emerald-500 selection:text-white">
       {/* Background RPG Scenery Layer */}
-      <div className="absolute inset-0 pointer-events-none z-0">
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <Image
           src="/codequest_onboarding_bg.jpg"
-          alt="CodeQuest Onboarding World"
+          alt=""
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-85"
+          className="object-cover object-center"
           style={{ imageRendering: "pixelated" }}
         />
-        {/* Soft Radial Gradient highlight to keep center cards super crisp */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(251,251,250,0.94)_0%,_rgba(251,251,250,0.88)_50%,_rgba(251,251,250,0.35)_100%)] pointer-events-none" />
+        {/* Light center vignette — preserves island scenery at edges */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_center,_rgba(244,248,240,0.78)_0%,_rgba(244,248,240,0.55)_55%,_rgba(244,248,240,0)_100%)] pointer-events-none" />
       </div>
 
       {/* ========================================================
