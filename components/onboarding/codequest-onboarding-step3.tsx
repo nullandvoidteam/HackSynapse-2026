@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { CodeQuestLogo } from "@/components/brand/codequest-logo"
 
 interface LanguageOption {
   id: string
@@ -245,20 +246,9 @@ export function CodeQuestOnboardingStep3({
         {/* Left Branding */}
         <Link
           href="/"
-          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-lg p-1"
+          className="focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded-lg p-1"
         >
-          <div className="relative flex items-center justify-center">
-            <div className="h-9 w-9 bg-emerald-600 border-2 border-b-4 border-emerald-700 rounded-xl flex items-center justify-center text-white font-mono font-black text-sm shadow-md group-hover:scale-105 transition-transform">
-              &lt;/&gt;
-            </div>
-            <span className="absolute -top-2 -right-2 text-amber-400 text-xs animate-twinkle select-none">
-              ✦
-            </span>
-          </div>
-
-          <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-emerald-600 transition-colors">
-            CodeQuest
-          </span>
+          <CodeQuestLogo size="md" showTagline={false} />
         </Link>
 
         {/* Right Step Progress Bar (Step 3 of 4) */}

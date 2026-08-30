@@ -1,18 +1,13 @@
 import Link from 'next/link'
 import { ChevronDown, Search, Moon } from 'lucide-react'
+import { CodeQuestLogo } from './brand/codequest-logo'
 
 export function SiteHeader() {
   return (
     <header className="absolute top-0 w-full z-50 flex h-[80px] items-center justify-between px-6 md:px-12 text-white">
       <div className="flex items-center gap-8">
         <Link href="/" className="flex items-center gap-3">
-          {/* Coin Icon approximation */}
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#fbbf24] border-[2px] border-b-[3px] border-[#b45309] text-[#78350f] font-pixel text-[13px] shadow-[inset_-1px_-1px_0_0_#fb923c]">
-            d
-          </div>
-          <span className="font-pixel text-[22px] text-white">
-            dex
-          </span>
+          <CodeQuestLogo size="md" />
         </Link>
 
         {/* Nav Links */}

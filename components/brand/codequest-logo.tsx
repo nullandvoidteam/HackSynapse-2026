@@ -84,7 +84,6 @@ export function CodeQuestLogo({
   className,
   size = "md",
   showTagline = false,
-  variant = "full",
   ...props
 }: LogoProps) {
   const iconSizes = {

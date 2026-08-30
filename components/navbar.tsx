@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Flame, Star, Menu } from 'lucide-react'
 import { signout } from '@/app/(auth)/actions'
 import { GamifiedButton } from './ui/gamified-button'
+import { CodeQuestLogo } from './brand/codequest-logo'
 
 export function Navbar() {
   return (
@@ -11,12 +12,7 @@ export function Navbar() {
           <Menu className="h-6 w-6" />
         </button>
         <Link href="/dashboard" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded bg-primary text-primary-foreground font-black text-xl">
-            d
-          </div>
-          <span className="hidden font-bold uppercase tracking-wider md:inline-block">
-            dex
-          </span>
+          <CodeQuestLogo size="sm" />
         </Link>
       </div>
 
