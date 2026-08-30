@@ -36,7 +36,7 @@ export default async function DashboardPage() {
         </div>
         <div>
           <h2 className="text-2xl font-bold font-pixel mb-2 text-foreground uppercase tracking-wider">Welcome back, {username}!</h2>
-          <p className="text-muted-foreground text-lg">You're doing great. Ready to earn some more XP today?</p>
+          <p className="text-muted-foreground text-lg">You&apos;re doing great. Ready to earn some more XP today?</p>
         </div>
       </GamifiedCard>
 

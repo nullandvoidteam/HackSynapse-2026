@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { GamifiedCard } from '@/components/ui/gamified-card'
 import { GamifiedInput } from '@/components/ui/gamified-input'
 import { GamifiedButton } from '@/components/ui/gamified-button'
