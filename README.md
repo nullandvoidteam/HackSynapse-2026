@@ -1,1 +1,0 @@
-#Hack-Synapse-2026
